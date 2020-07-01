@@ -1,0 +1,115 @@
+:root{
+    --gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+    --pblue: hsl(243, 100%, 93%);
+    --gblue: hsl(229, 7%, 55%);
+    --dblue: hsl(228, 56%, 26%);
+    --vdblue: hsl(229, 57%, 11%);
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--vdblue);
+    background-image: url('./images/bg-desktop.png');
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position-y: bottom;
+    color: var(--pblue);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.container{
+    margin: 0 auto;
+    max-width: 1400px;
+    width: 80%;
+    min-height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: var(--dblue);
+    border-radius: .5em;
+    margin: 2em;
+
+}
+
+.card-data{
+    width: 25%;
+    border-top-right-radius: 6em;
+    padding: 2em;
+}
+
+.logo{
+    width: 10em;
+    margin-bottom: 2em;
+}
+.btn-icons{
+    background-color: var(--vdblue);
+    padding: .5em;
+    margin-right: .1em;
+    border-radius: .5em;
+}
+
+.card-bar{
+    width: 60%;
+    padding: 1em 2em;
+}
+.card-bar::before{
+    content: '185';
+    text-align: center;
+    color: var(--vdblue);
+    width: 20%;
+    height: 30%;
+    display: inline-block;
+    position: relative;
+    border-radius: .3em;
+    left: 78.2%;
+    top: -1.1em;
+    background-color: var(--pblue);
+
+}
+.card-bar::before::before{
+    content: '185';
+    text-align: center;
+    color: var(--vdblue);
+    width: 20%;
+    height: 30%;
+    display: inline-block;
+    position: relative;
+    border-radius: .3em;
+    left: 50%;
+    top: -1.1em;
+    background-color: var(--pblue);
+}
+
+progress[value] { /*    ProgressBar RESET    */
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 1em;
+}
+progress[value]::-webkit-progress-bar { /*    ProgressBar BG    */
+    background-color: var(--vdblue);
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+progress[value]::-webkit-progress-value { /*    ProressBar VL    */
+    background: -webkit-linear-gradient(left,hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 50px;
+    border: 1px solid var(--vdblue);
+}
+.bar[value]::after { /*    ProgressBar DOT    */
+    content: '';
+    display: inline-block;
+    width: .6em;
+    height: .6em;
+    position: relative;
+    border-radius: 100%;
+    left: 79%;
+    top: -1.1em;
+    background-color: var(--pblue);
+}
