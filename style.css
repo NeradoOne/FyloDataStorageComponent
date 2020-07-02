@@ -17,13 +17,8 @@ body {
   color: var(--pblue);
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
+.attribution {font-size: 11px;text-align: center;}
+.attribution a {color: hsl(228, 45%, 44%);}
 
 .container {
   margin: 0 auto;
